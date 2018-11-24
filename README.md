@@ -4,11 +4,20 @@ This is a collection of jupyter notebook files for my personal study of deep lea
 
 In addition to jupyter notebook and python3, tensorflow(-gpu) and cuda are necessary.
 
+# Setup
+
+## Installation of tensorflow from the source code
+
+If the compute capability of the graphic card is 3.0, the tensorflow-gpu package must be compiled from the source code. Follow the instructions in the following web page: 
 [How to install Tensorflow GPU with CUDA 10.0 for python on Ubuntu](https://www.python36.com/how-to-install-tensorflow-gpu-with-cuda-10-0-for-python-on-ubuntu/)
+
+A compiled whl file for Quadro K600 is backuped: [tensorflow-1.12.0-cp36-cp36m-linux\_x86\_64.whl)](https://drive.google.com/open?id=1vaNaZW90XeqPchU0fmnVW1cZXx9TkfdA). See [the instructions](./backups/quadro_k600/SETUP.md) to install it.
+
 
 # List of notes
 
 - [CPU/GPU test by tensorflow](./tensorflow_test.ipynb): Test code of tensorflow to compare CPU and GPU.
+
 
 # Troubleshooting
 
