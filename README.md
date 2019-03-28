@@ -6,6 +6,23 @@ In addition to jupyter notebook and python3, tensorflow(-gpu) and cuda are neces
 
 [How to install Tensorflow GPU with CUDA 10.0 for python on Ubuntu](https://www.python36.com/how-to-install-tensorflow-gpu-with-cuda-10-0-for-python-on-ubuntu/)
 
+# How to run jupyter notebook on a remote machine and access it by your local machine.
+
+- Log in to the remote machine by ssh
+  ```
+  ssh <your account>@<remote machine's name>
+  ```
+- Run the jupyter notebook
+  ```
+  jupyter notebook --no-browser --port=8889
+  ```
+- Open another terminal window on your local machine
+- Open a SSH tunnel
+  ```
+  ssh -N -f -L localhost:8888:localhost:8889 <your account>@<remote machine's name>
+  ```
+- In the address bar of your web browser, fill in `localhost:8888` and open the page
+
 # List of notes
 
 - [CPU/GPU test by tensorflow](./tensorflow_test.ipynb): Test code of tensorflow to compare CPU and GPU.
